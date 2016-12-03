@@ -13,4 +13,16 @@
 
         android:layout_alignParentEnd="true" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter Exercise..."
+        android:ems="10"
+        android:layout_below="@+id/backbutton1"
+        android:layout_toStartOf="@+id/backbutton1"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText" />
+
 </RelativeLayout>

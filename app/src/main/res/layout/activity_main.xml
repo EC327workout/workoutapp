@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.msi.w1.MainActivity">
+    tools:context="com.example.msi.w1.MainActivity"
+    android:background="@android:color/holo_blue_light">
 
 
     <LinearLayout
@@ -47,10 +48,61 @@
         android:layout_height="wrap_content"
         android:text="WorkOut"
         android:id="@+id/WorkOut"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="52dp"
         android:textSize="36sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/button1" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="82dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button1"/>
+
+
+            <Button
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button3"/>
+
+
+            <Button
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button2"/>
+
+
+            <Button
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button4"/>
+
+
+            <Button
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button5"/>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 
 </RelativeLayout>

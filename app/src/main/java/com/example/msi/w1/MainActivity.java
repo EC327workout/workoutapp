@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button addbutton;
     private Button profilevbutton;
     private Button settingsbutton;
-    private ImageButton backbuttonone;
+    //public ImageButton backbuttonone;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         addbutton = (Button) findViewById(R.id.button1);
         profilevbutton = (Button) findViewById(R.id.button2);
         settingsbutton = (Button) findViewById(R.id.button3);
-        backbuttonone = (ImageButton).findViewById(R.id.backbutton1);
+        //backbuttonone = (ImageButton).findViewById(R.id.backbutton1);
 
         View.OnClickListener listner1 = new View.OnClickListener() {
             @Override
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-        View.OnClickListener listener4 = new View.OnClickListener() {
+        /*View.OnClickListener listener4 = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -79,11 +79,11 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-        };
+        };*/
         addbutton.setOnClickListener(listner1);
         profilevbutton.setOnClickListener(listener2);
         settingsbutton.setOnClickListener(listener3);
-        backbuttonone.setOnClickListener(listener4); //NULL POINTER EXCEPTION
+        //backbuttonone.setOnClickListener(listener4); //NULL POINTER EXCEPTION
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
